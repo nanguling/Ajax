@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_course-myajax/01_course-myajax.iml" filepath="$PROJECT_DIR$/01_course-myajax/01_course-myajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_ajax局部刷新/02_ajax局部刷新.iml" filepath="$PROJECT_DIR$/02_ajax局部刷新/02_ajax局部刷新.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_查询城市信息ajax/03_查询城市信息ajax.iml" filepath="$PROJECT_DIR$/03_查询城市信息ajax/03_查询城市信息ajax.iml" />
+    </modules>
+  </component>
+</project>

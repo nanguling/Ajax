@@ -1,0 +1,42 @@
+//省份表
+create table province (
+    id int primary key auto_increment,
+    name varchar(20) default null,
+    jiancheng varchar(20) default null,
+    shenghui varchar(20) default null
+);
+insert into province values (1,'河北','冀','石家庄');
+insert into province values (2,'陕西','陕','西安');
+insert into province values (3,'四川','川','成都');
+insert into province values (4,'辽宁','辽','沈阳');
+insert into province values (5,'江苏','苏','南京');
+insert into province values (6,'浙江','浙','杭州');
+insert into province values (7,'安徽','皖','合肥');
+insert into province values (8,'福建','闽','福州');
+insert into province values (9,'江西','赣','南昌');
+
+
+//城市表
+create table city(
+    id int primary key auto_increment,
+    name varchar(20) default null,
+    pid int,
+    foreign key (pid) references province(id)
+);
+
+insert into city values (1,'石家庄',1);
+insert into city values (2,'秦皇岛',1);
+insert into city values (3,'保定',1);
+insert into city values (4,'张家口',1);
+insert into city values (5,'成都',3);
+insert into city values (6,'西安',2);
+insert into city values (7,'汉中',2);
+insert into city values (8,'福州',8);
+insert into city values (9,'厦门',8);
+insert into city values (10,'泉州',8);
+insert into city values (11,'沈阳',4);
+insert into city values (12,'南京',5);
+insert into city values (13,'江西',9);
+insert into city values (14,'温州',6);
+insert into city values (15,'安徽',7);
+insert into city values (16,'咸阳',2);
